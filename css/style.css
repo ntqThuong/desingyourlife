@@ -1,0 +1,218 @@
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    box-sizing: border-box;
+    position: relative;
+    width: 600px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-title {
+    background-color: #212529;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-title {
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0px;
+}
+
+.text-center {
+    font-size: 31px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.hr-column {
+    padding: 0 10px;
+    position: relative;
+    flex-direction: column-reverse;
+}
+
+.editable-container {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.editable-hr {
+    border: none;
+    border-top: 1px solid #7d7e7e;
+    margin: 10px 0;
+    padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+    .editable-hr[contenteditable="true"]:empty::before {
+        color: #adb5bd;
+    }
+
+.line {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+}
+
+    .line img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+.title {
+    text-align: center;
+    font-weight: 900;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+    .banner img {
+        max-width: 10em;
+        margin: 0 10px;
+    }
+
+.img-title {
+    overflow: auto; /* Tự động hiển thị thanh cuộn khi cần thiết */
+    max-height: 491px;
+    /* Giới hạn chiều cao tối đa của .img-title để tránh quá mức */
+}
+
+    .img-title img {
+        width: 100%; /* Chiều rộng ảnh bằng với khung .img-title */
+        height: auto; /* Tự động điều chỉnh chiều cao */
+        object-fit: cover;
+    }
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 18px;
+    }
+
+    .line {
+        margin-top: 26%;
+    }
+
+    .title {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 576px) {
+    .line {
+        margin-top: 18%;
+    }
+
+    .sub-title {
+        font-weight: 400;
+        font-size: 8px;
+    }
+
+    .text-center {
+        font-size: 24px;
+    }
+
+    .editable-container {
+        top: 0;
+        padding: 5px;
+    }
+
+    .line img {
+        margin-top: 10px;
+    }
+
+    .editable-hr {
+        margin: 5px 0;
+    }
+}
+
+/* Đoạn CSS mới */
+.content {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.quote {
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    font-family: Georgia, serif;
+    font-size: 60px;
+    color: #000;
+}
+
+    .quote:before,
+    .quote:after,
+    .quote span {
+        content: '';
+        width: 37%;
+        height: 18px;
+        background-color: #888;
+        position: absolute;
+    }
+
+    .quote:before {
+        top: 26%;
+        left: 0;
+        transform: translate(0, -50%);
+    }
+
+    .quote:after {
+        top: 26%;
+        right: 0;
+        transform: translate(0, -50%);
+    }
+
+    .quote span {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }

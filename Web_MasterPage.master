@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Web_MasterPage.master.cs" Inherits="Web_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title>Cơm Nhà</title>
+
+</head>
+<body>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+    </asp:ContentPlaceHolder>
+   
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder6" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder7" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder8" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder9" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin_MasterPage.master.cs" Inherits="Admin_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Administrator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <asp:ContentPlaceHolder ID="headlink" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <asp:ContentPlaceHolder ID="hibodyhead" runat="server">
+    </asp:ContentPlaceHolder>
+    <article class="content item-editor-page">
+        <asp:ContentPlaceHolder ID="hibodywrapper" runat="server">
+        </asp:ContentPlaceHolder>
+    </article>
+    <asp:ContentPlaceHolder ID="hibodybottom" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <asp:ContentPlaceHolder ID="hifooter" runat="server">
+    </asp:ContentPlaceHolder>
+
+</body>
+</html>
